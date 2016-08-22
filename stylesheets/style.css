@@ -1,0 +1,1104 @@
+@font-face {
+  font-family: 'pt_sans_regular';
+  src: url("../font/PT_Sans-Web-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pt_sans_italic';
+  src: url("../font/PT_Sans-Web-Italic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pt_sans_bold_italic';
+  src: url("../font/PT_Sans-Web-BoldItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pt_sans_bold';
+  src: url("../font/PT_Sans-Web-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'droid_sans';
+  src: url("../font/DroidSans.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'droid_sans_bold';
+  src: url("../font/DroidSans-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'socialicoregular';
+  src: url("../font/socialico-webfont.eot");
+  src: url("../font/socialico-webfont.eot?#iefix") format("embedded-opentype"), url("../font/socialico-webfont.woff") format("woff"), url("../font/socialico-webfont.ttf") format("truetype"), url("../font/socialico-webfont.svg#socialicoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 90, ../sass/style.css.scss */
+body {
+  font: 100% "droid_sans", Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  color: #1e1f20;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+  width: 100% !important;
+  line-height: 24px;
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  zoom: 1;
+  overflow-x: hidden !important;
+}
+
+/* line 106, ../sass/style.css.scss */
+html {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+/* line 115, ../sass/style.css.scss */
+.social-font-name {
+  font-family: "socialicoregular";
+}
+
+/* line 118, ../sass/style.css.scss */
+.large-font-name {
+  font-family: "pt_sans_regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 121, ../sass/style.css.scss */
+.bold-font-name {
+  font-family: "droid_sans_bold", Helvetica, Arial, sans-serif !important;
+}
+
+/* line 124, ../sass/style.css.scss */
+.paragraph-font-name {
+  font-family: "droid_sans", Helvetica, Arial, sans-serif;
+}
+
+/* line 128, ../sass/style.css.scss */
+.primary-text-color {
+  color: #1e1f20 !important;
+}
+/* line 130, ../sass/style.css.scss */
+.primary-text-color p {
+  color: #1e1f20 !important;
+}
+
+/* line 135, ../sass/style.css.scss */
+.gray-text-color {
+  color: #999999 !important;
+}
+/* line 137, ../sass/style.css.scss */
+.gray-text-color p {
+  color: #999999 !important;
+}
+
+/* line 142, ../sass/style.css.scss */
+.secondary-text-color {
+  color: #19a885 !important;
+}
+/* line 144, ../sass/style.css.scss */
+.secondary-text-color p {
+  color: #19a885 !important;
+}
+
+/* line 151, ../sass/style.css.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+/* line 154, ../sass/style.css.scss */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  margin-bottom: 24px;
+  color: #1e1f20;
+}
+
+/* line 160, ../sass/style.css.scss */
+h1 {
+  font-family: "pt_sans_regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 163, ../sass/style.css.scss */
+h2 {
+  font-family: "pt_sans_regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 166, ../sass/style.css.scss */
+h3 {
+  font-family: "pt_sans_regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 169, ../sass/style.css.scss */
+h4 {
+  font-family: "pt_sans_regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 172, ../sass/style.css.scss */
+h5 {
+  font-family: "pt_sans_regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 175, ../sass/style.css.scss */
+h6 {
+  font-family: "pt_sans_regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 178, ../sass/style.css.scss */
+p {
+  font-family: "droid_sans", Helvetica, Arial, sans-serif;
+  color: #666;
+}
+
+/* line 183, ../sass/style.css.scss */
+p {
+  font-size: 1em;
+  line-height: 24px;
+}
+
+/* line 184, ../sass/style.css.scss */
+h1 {
+  font-size: 2.5em;
+  line-height: 48px;
+}
+
+/* line 185, ../sass/style.css.scss */
+h2 {
+  font-size: 1.375em;
+  line-height: 36px;
+}
+
+/* line 186, ../sass/style.css.scss */
+h3 {
+  color: #999999;
+  line-height: 48px;
+}
+
+/* line 190, ../sass/style.css.scss */
+h4 {
+  font-size: 1.4em;
+  line-height: 24px;
+}
+
+/* line 191, ../sass/style.css.scss */
+h5 {
+  font-size: 1em;
+  line-height: 24px;
+}
+
+/* line 192, ../sass/style.css.scss */
+h6 {
+  font-size: 0.9em;
+  line-height: 24px;
+}
+
+/* line 194, ../sass/style.css.scss */
+.truncate {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 200, ../sass/style.css.scss */
+.section-header {
+  border-bottom: 1px solid #999999;
+  margin-bottom: 24px;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+}
+
+/* line 210, ../sass/style.css.scss */
+.text-columns-2 {
+  -webkit-columns: 24px 2;
+  -moz-columns: 24px 2;
+  columns: 24px 2;
+}
+
+/* line 213, ../sass/style.css.scss */
+.text-columns-3 {
+  -webkit-columns: 24px 3;
+  -moz-columns: 24px 3;
+  columns: 24px 3;
+}
+
+/* line 216, ../sass/style.css.scss */
+.text-columns-4 {
+  -webkit-columns: 24px 4;
+  -moz-columns: 24px 4;
+  columns: 24px 4;
+}
+
+/* line 220, ../sass/style.css.scss */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* line 227, ../sass/style.css.scss */
+.bold-font-name {
+  font-family: "droid_sans_bold", Helvetica, Arial, sans-serif;
+}
+
+/* line 230, ../sass/style.css.scss */
+.paragraph-font-name {
+  font-family: "droid_sans", Helvetica, Arial, sans-serif;
+}
+
+/* line 236, ../sass/style.css.scss */
+small {
+  line-height: 2px;
+}
+
+/* line 240, ../sass/style.css.scss */
+hr {
+  border-color: #999999;
+}
+
+/* line 246, ../sass/style.css.scss */
+.relative {
+  position: relative;
+}
+
+/* line 250, ../sass/style.css.scss */
+.hidden {
+  display: none;
+}
+
+/* line 254, ../sass/style.css.scss */
+.base-line-height {
+  line-height: 24px;
+}
+
+/* line 258, ../sass/style.css.scss */
+.left {
+  float: left;
+}
+
+/* line 261, ../sass/style.css.scss */
+.right {
+  float: right;
+}
+
+/* line 265, ../sass/style.css.scss */
+.full-width {
+  width: 100% !important;
+}
+
+/* line 269, ../sass/style.css.scss */
+.display-block {
+  display: block;
+}
+
+/* line 273, ../sass/style.css.scss */
+.inline-block {
+  display: inline-block;
+}
+
+/* line 277, ../sass/style.css.scss */
+.inline {
+  display: inline;
+}
+
+/* line 281, ../sass/style.css.scss */
+ul.inline {
+  list-style: none;
+  margin-left: 0;
+}
+/* line 284, ../sass/style.css.scss */
+ul.inline li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+/* line 289, ../sass/style.css.scss */
+ul {
+  color: #666;
+}
+
+/* line 295, ../sass/style.css.scss */
+.border-top {
+  border-top: 1px solid #f9fafb;
+}
+
+/* line 298, ../sass/style.css.scss */
+.border-right {
+  border-right: 1px solid #999999;
+}
+
+/* line 301, ../sass/style.css.scss */
+.border-bottom {
+  border-bottom: 1px solid #f9fafb;
+}
+
+/* line 304, ../sass/style.css.scss */
+.border-left {
+  border-left: 1px solid #999999;
+}
+
+/* line 308, ../sass/style.css.scss */
+.darker-border-bottom {
+  border-bottom: 2px solid #1e1f20;
+}
+
+/* line 313, ../sass/style.css.scss */
+.margin-auto {
+  margin: 0 auto;
+}
+
+/* line 316, ../sass/style.css.scss */
+.margin {
+  margin: 24px !important;
+}
+
+/* line 319, ../sass/style.css.scss */
+.margin-top {
+  margin-top: 24px !important;
+}
+
+/* line 322, ../sass/style.css.scss */
+.margin-right {
+  margin-right: 24px !important;
+}
+
+/* line 325, ../sass/style.css.scss */
+.margin-bottom {
+  margin-bottom: 24px !important;
+}
+
+/* line 328, ../sass/style.css.scss */
+.margin-left {
+  margin-left: 24px !important;
+}
+
+/* line 331, ../sass/style.css.scss */
+.double-margin-top {
+  margin-top: 48px !important;
+}
+
+/* line 334, ../sass/style.css.scss */
+.double-margin-right {
+  margin-right: 48px !important;
+}
+
+/* line 337, ../sass/style.css.scss */
+.double-margin-bottom {
+  margin-bottom: 48px !important;
+}
+
+/* line 340, ../sass/style.css.scss */
+.double-margin-left {
+  margin-left: 48px !important;
+}
+
+/* line 343, ../sass/style.css.scss */
+.triple-margin-top {
+  margin-top: 72px !important;
+}
+
+/* line 346, ../sass/style.css.scss */
+.triple-margin-right {
+  margin-right: 72px !important;
+}
+
+/* line 349, ../sass/style.css.scss */
+.triple-margin-bottom {
+  margin-bottom: 72px !important;
+}
+
+/* line 352, ../sass/style.css.scss */
+.triple-margin-left {
+  margin-left: 72px !important;
+}
+
+/* line 355, ../sass/style.css.scss */
+.half-margin-top {
+  margin-top: 12px !important;
+}
+
+/* line 358, ../sass/style.css.scss */
+.half-margin-right {
+  margin-right: 12px !important;
+}
+
+/* line 361, ../sass/style.css.scss */
+.half-margin-bottom {
+  margin-bottom: 12px !important;
+}
+
+/* line 364, ../sass/style.css.scss */
+.half-margin-left {
+  margin-left: 12px !important;
+}
+
+/* line 367, ../sass/style.css.scss */
+.quarter-margin-top {
+  margin-top: 6px !important;
+}
+
+/* line 370, ../sass/style.css.scss */
+.quarter-margin-right {
+  margin-right: 6px !important;
+}
+
+/* line 373, ../sass/style.css.scss */
+.quarter-margin-bottom {
+  margin-bottom: 6px !important;
+}
+
+/* line 376, ../sass/style.css.scss */
+.quarter-margin-left {
+  margin-left: 6px !important;
+}
+
+/* line 379, ../sass/style.css.scss */
+.no-margin {
+  margin: 0px !important;
+}
+
+/* line 382, ../sass/style.css.scss */
+.no-margin-top {
+  margin-top: 0px !important;
+}
+
+/* line 385, ../sass/style.css.scss */
+.no-margin-right {
+  margin-right: 0px !important;
+}
+
+/* line 388, ../sass/style.css.scss */
+.no-margin-bottom {
+  margin-bottom: 0px !important;
+}
+
+/* line 391, ../sass/style.css.scss */
+.no-margin-left {
+  margin-left: 0px !important;
+}
+
+/* line 394, ../sass/style.css.scss */
+.large-margin-top {
+  margin-top: 72px !important;
+}
+
+/* line 399, ../sass/style.css.scss */
+.padded {
+  padding: 24px !important;
+}
+
+/* line 402, ../sass/style.css.scss */
+.padding-top {
+  padding-top: 24px !important;
+}
+
+/* line 405, ../sass/style.css.scss */
+.padding-right {
+  padding-right: 24px !important;
+}
+
+/* line 408, ../sass/style.css.scss */
+.padding-bottom {
+  padding-bottom: 24px !important;
+}
+
+/* line 411, ../sass/style.css.scss */
+.padding-left {
+  padding-left: 24px !important;
+}
+
+/* line 414, ../sass/style.css.scss */
+.double-padded {
+  padding: 48px !important;
+}
+
+/* line 417, ../sass/style.css.scss */
+.double-padding-top {
+  padding-top: 48px !important;
+}
+
+/* line 420, ../sass/style.css.scss */
+.double-padding-right {
+  padding-right: 48px !important;
+}
+
+/* line 423, ../sass/style.css.scss */
+.double-padding-bottom {
+  padding-bottom: 48px !important;
+}
+
+/* line 426, ../sass/style.css.scss */
+.double-padding-left {
+  padding-left: 48px !important;
+}
+
+/* line 429, ../sass/style.css.scss */
+.triple-padding-top {
+  padding-top: 72px !important;
+}
+
+/* line 432, ../sass/style.css.scss */
+.triple-padding-right {
+  padding-right: 72px !important;
+}
+
+/* line 435, ../sass/style.css.scss */
+.triple-padding-bottom {
+  padding-bottom: 72px !important;
+}
+
+/* line 438, ../sass/style.css.scss */
+.triple-padding-left {
+  padding-left: 72px !important;
+}
+
+/* line 441, ../sass/style.css.scss */
+.no-padding {
+  padding: 0px !important;
+}
+
+/* line 444, ../sass/style.css.scss */
+.no-padding-top {
+  padding-top: 0px !important;
+}
+
+/* line 447, ../sass/style.css.scss */
+.no-padding-right {
+  padding-right: 0px !important;
+}
+
+/* line 450, ../sass/style.css.scss */
+.no-padding-bottom {
+  padding-bottom: 0px !important;
+}
+
+/* line 453, ../sass/style.css.scss */
+.no-padding-left {
+  padding-left: 0px !important;
+}
+
+/* line 456, ../sass/style.css.scss */
+.half-padding {
+  padding: 12px !important;
+}
+
+/* line 459, ../sass/style.css.scss */
+.half-padding-top {
+  padding-top: 12px !important;
+}
+
+/* line 462, ../sass/style.css.scss */
+.half-padding-right {
+  padding-right: 12px !important;
+}
+
+/* line 465, ../sass/style.css.scss */
+.half-padding-bottom {
+  padding-bottom: 12px !important;
+}
+
+/* line 468, ../sass/style.css.scss */
+.half-padding-left {
+  padding-left: 12px !important;
+}
+
+/* line 471, ../sass/style.css.scss */
+.quarter-padding {
+  padding: 6px !important;
+}
+
+/* line 474, ../sass/style.css.scss */
+.quarter-padding-top {
+  padding-top: 6px !important;
+}
+
+/* line 477, ../sass/style.css.scss */
+.quarter-padding-right {
+  padding-right: 6px !important;
+}
+
+/* line 480, ../sass/style.css.scss */
+.quarter-padding-bottom {
+  padding-bottom: 6px !important;
+}
+
+/* line 483, ../sass/style.css.scss */
+.quarter-padding-left {
+  padding-left: 6px !important;
+}
+
+/* line 489, ../sass/style.css.scss */
+.thumb-md {
+  max-width: 200px;
+}
+
+/* line 493, ../sass/style.css.scss */
+.thumb-sm {
+  max-width: 70px;
+}
+
+/* line 500, ../sass/style.css.scss */
+a {
+  color: #1e1f20;
+}
+/* line 502, ../sass/style.css.scss */
+a:hover {
+  text-decoration: none;
+}
+/* line 505, ../sass/style.css.scss */
+a.disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+/* line 514, ../sass/style.css.scss */
+.btn {
+  text-decoration: none;
+  font-family: "droid_sans_bold", Helvetica, Arial, sans-serif;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-size: 1em;
+  color: white !important;
+  padding: 12px 24px;
+}
+/* line 521, ../sass/style.css.scss */
+.btn.btn-primary {
+  background-color: white;
+  border-color: #1b1c1d !important;
+}
+/* line 524, ../sass/style.css.scss */
+.btn.btn-primary:hover {
+  background-color: #47b99d !important;
+}
+/* line 528, ../sass/style.css.scss */
+.btn.btn-gray {
+  background-color: #8a8a8a;
+  border-color: #7a7a7a !important;
+}
+/* line 531, ../sass/style.css.scss */
+.btn.btn-gray:hover {
+  background-color: #cccccc !important;
+}
+/* line 535, ../sass/style.css.scss */
+.btn.btn-default {
+  background-color: #19a885;
+  border-color: #18a07e !important;
+}
+/* line 538, ../sass/style.css.scss */
+.btn.btn-default i {
+  opacity: .7;
+}
+/* line 541, ../sass/style.css.scss */
+.btn.btn-default:hover {
+  background-color: #158f71 !important;
+}
+/* line 543, ../sass/style.css.scss */
+.btn.btn-default:hover i {
+  opacity: 1;
+}
+/* line 548, ../sass/style.css.scss */
+.btn.btn-wire {
+  color: white !important;
+  border: 2px solid rgba(255, 255, 255, 0.5) !important;
+  background-color: transparent !important;
+}
+/* line 552, ../sass/style.css.scss */
+.btn.btn-wire:hover {
+  border-color: white !important;
+}
+
+/* line 558, ../sass/style.css.scss */
+button a {
+  color: white;
+}
+
+/* line 562, ../sass/style.css.scss */
+button a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 567, ../sass/style.css.scss */
+button a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 572, ../sass/style.css.scss */
+button a:active {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 577, ../sass/style.css.scss */
+#hiw-video .fa-play-circle {
+  font-size: 75px;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* line 582, ../sass/style.css.scss */
+#hiw-video a:hover .fa-play-circle {
+  font-size: 75px;
+  color: #ffffff !important;
+}
+
+/* line 589, ../sass/style.css.scss */
+section {
+  padding: 24px 0;
+}
+
+/* line 596, ../sass/style.css.scss */
+.panel.secondary-panel {
+  background-color: #0c0c0d;
+}
+/* line 599, ../sass/style.css.scss */
+.panel.secondary-panel .panel-body h1, .panel.secondary-panel .panel-body h2, .panel.secondary-panel .panel-body h3, .panel.secondary-panel .panel-body h4, .panel.secondary-panel .panel-body h5, .panel.secondary-panel .panel-body h6, .panel.secondary-panel .panel-body p {
+  color: white;
+}
+
+/* line 606, ../sass/style.css.scss */
+.special {
+  background-color: #ffffff;
+  border: 2px solid #19a885;
+  font-color: #19a885;
+}
+
+/* line 612, ../sass/style.css.scss */
+.shaded-background {
+  background-color: #f9fafb;
+}
+
+/* line 617, ../sass/style.css.scss */
+.modal {
+  padding-top: 150px;
+}
+
+/* line 621, ../sass/style.css.scss */
+.modal-footer {
+  border-top: none;
+}
+
+/* line 625, ../sass/style.css.scss */
+.video-modal {
+  position: relative;
+  background-clip: padding-box;
+  outline: none;
+  height: auto;
+  min-height: 300px;
+}
+
+/* line 633, ../sass/style.css.scss */
+.video {
+  height: auto;
+  min-height: 300px;
+}
+
+/* line 641, ../sass/style.css.scss */
+nav.main-nav {
+  background-color: white;
+  padding: 6px 0;
+}
+/* line 644, ../sass/style.css.scss */
+nav.main-nav ul {
+  margin-top: 8px;
+}
+/* line 646, ../sass/style.css.scss */
+nav.main-nav ul li {
+  font-size: 1em !important;
+  margin: 0 12px;
+  margin-top: 12px;
+}
+/* line 650, ../sass/style.css.scss */
+nav.main-nav ul li .btn {
+  margin-top: 0px;
+}
+/* line 654, ../sass/style.css.scss */
+nav.main-nav ul li.active a {
+  background: none !important;
+  color: black !important;
+}
+/* line 659, ../sass/style.css.scss */
+nav.main-nav ul li a {
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 664, ../sass/style.css.scss */
+nav.main-nav .btn {
+  padding: 12px;
+}
+
+/* line 670, ../sass/style.css.scss */
+.logo {
+  width: 128px;
+  height: 65px;
+  background-image: url("../images/logo.png");
+}
+
+/* line 678, ../sass/style.css.scss */
+section {
+  padding: 192px 0;
+}
+/* line 681, ../sass/style.css.scss */
+section.invert-section h1, section.invert-section h2, section.invert-section h3, section.invert-section h4, section.invert-section h5, section.invert-section h6, section.invert-section p, section.invert-section li, section.invert-section i {
+  color: white;
+}
+/* line 685, ../sass/style.css.scss */
+section#index-hero {
+  background: url("http://vinylmeplease.com/wp-content/uploads/2015/02/home-page-hero.png") no-repeat scroll center top;
+  background-size: cover;
+}
+/* line 688, ../sass/style.css.scss */
+section#index-hero h1, section#index-hero h2 {
+  color: #1e1f20;
+}
+/* line 692, ../sass/style.css.scss */
+section#about-hero {
+  background: url('/images/about-hero.jpg?1436906681') no-repeat scroll center top;
+  background-size: cover;
+}
+
+/* line 698, ../sass/style.css.scss */
+footer ul li a {
+  color: #999999;
+}
+
+/* line 702, ../sass/style.css.scss */
+.bg-cover {
+  background-size: 100%;
+  background-size: cover;
+  background-position: top center;
+  vertical-align: center;
+  height: 500px;
+}
+
+/* line 710, ../sass/style.css.scss */
+.bg-cover-2 {
+  background-size: 100%;
+  background-size: cover;
+  background-position: top center;
+  vertical-align: center;
+  height: auto;
+  min-height: 450px;
+}
+
+/* line 719, ../sass/style.css.scss */
+section .bg-cover-2 {
+  padding: 100px;
+}
+
+/* line 723, ../sass/style.css.scss */
+.bg-cover-full {
+  background-size: 100%;
+  background-size: cover;
+  background-position: center center;
+  vertical-align: center;
+  background-repeat: no-repeat;
+}
+
+/* line 731, ../sass/style.css.scss */
+#hiw-header {
+  background-size: cover;
+  height: 675px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url(http://vinylmeplease.com/wp-content/uploads/2015/02/hiw-header-2-1.png);
+}
+
+/* line 739, ../sass/style.css.scss */
+#hiw-video {
+  background-size: 100%;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  vertical-align: center;
+  height: auto;
+  min-height: 350px;
+  background-image: url(http://vinylmeplease.com/wp-content/uploads/2015/03/video-bg.png);
+}
+
+/* line 750, ../sass/style.css.scss */
+blockquote {
+  font-size: 1.375em;
+  line-height: 36px;
+}
+
+/* line 755, ../sass/style.css.scss */
+blockquote .no-border {
+  border-left: none !important;
+}
+
+/* line 759, ../sass/style.css.scss */
+.invert-section blockquote {
+  color: #ffffff;
+}
+
+/* line 763, ../sass/style.css.scss */
+.invert-section blockquote footer {
+  color: #ffffff;
+}
+
+/* line 767, ../sass/style.css.scss */
+.invert-section {
+  color: #ffffff;
+}
+
+/* line 771, ../sass/style.css.scss */
+a {
+  color: #19a885;
+}
+
+/* line 775, ../sass/style.css.scss */
+a:hover {
+  color: #19a885;
+  text-decoration: underline;
+}
+
+/* line 780, ../sass/style.css.scss */
+a.anchor {
+  display: block;
+  position: relative;
+  top: -125px;
+  visibility: hidden;
+}
+
+/* line 787, ../sass/style.css.scss */
+.panel {
+  border: 1px solid #f9fafb;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  min-height: 500px;
+  border-radius: 0 !important;
+}
+
+/* line 794, ../sass/style.css.scss */
+form p .label {
+  font-family: "pt_sans_regular", Helvetica, Arial, sans-serif;
+  font-weight: inherit;
+  font-size: 1.4em;
+  line-height: 24px;
+}
+
+/* line 801, ../sass/style.css.scss */
+.wpcf7-form-control {
+  font-family: "pt_sans_regular", Helvetica, Arial, sans-serif;
+  font-weight: inherit;
+  font-size: 1.4em;
+  line-height: 24px;
+}
+
+/* line 808, ../sass/style.css.scss */
+.wpcf7-submit {
+  background-color: #19a885;
+  border-color: #18a07e !important;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  font-family: "droid_sans_bold", Helvetica, Arial, sans-serif;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-size: 1em;
+  color: white !important;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/* line 823, ../sass/style.css.scss */
+.panel-secondary {
+  min-height: 300px;
+  border-radius: 0 !important;
+  background-color: #f9fafb;
+}
+
+/* line 829, ../sass/style.css.scss */
+.navbar-nav.navbar-right:last-child {
+  margin-right: 0px;
+}
+
+@media (max-width: 1199px) {
+  /* line 846, ../sass/style.css.scss */
+  nav.main-nav li a {
+    padding: 15px 5px;
+  }
+}
+@media (max-width: 1100px) {
+  /* line 857, ../sass/style.css.scss */
+  .navbar-header {
+    float: none;
+  }
+
+  /* line 860, ../sass/style.css.scss */
+  .navbar-toggle {
+    display: block;
+  }
+
+  /* line 863, ../sass/style.css.scss */
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  /* line 867, ../sass/style.css.scss */
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  /* line 870, ../sass/style.css.scss */
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px;
+  }
+
+  /* line 874, ../sass/style.css.scss */
+  .navbar-nav > li {
+    float: none;
+  }
+
+  /* line 877, ../sass/style.css.scss */
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* line 881, ../sass/style.css.scss */
+  .navbar-text {
+    float: none;
+    margin: 15px 0;
+  }
+
+  /* since 3.1.0 */
+  /* line 886, ../sass/style.css.scss */
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+
+  /* line 889, ../sass/style.css.scss */
+  .collapsing {
+    overflow: hidden !important;
+  }
+}
+@media (max-width: 900px) {
+  /* line 897, ../sass/style.css.scss */
+  #hiw-header {
+    background-image: url(http://vinylmeplease.com/wp-content/uploads/2015/02/hiw-header-2.png);
+    max-height: 450px;
+    background-size: 100%;
+    background-size: cover;
+    background-position-y: 25%;
+    background-repeat: no-repeat;
+  }
+}
