@@ -1,7 +1,14 @@
+// vendor stuff is now concatenated to speed things up a bit
 @import 'bourbon/bourbon';
+@import '_vendor/font-awesome';
+@import '_vendor/bootstrap';
+@import '_vendor/mailchimp_embedd';
+
+// custom stuff can go in _partials or other folders as necessary
+@import '_partials/rotm';
+
 
 //fonts
-
 @font-face {
     font-family: 'pt_sans_regular';
     src: url('../font/PT_Sans-Web-Regular.ttf');
@@ -155,12 +162,12 @@ html {
 
 // type
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
-  font-weight: inherit; 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
 }
 h1, h2, h3, h4, h5, h6, p {
   margin:0;
-  margin-bottom:$baseline; 
+  margin-bottom:$baseline;
   color:$text-color;
 }
 
@@ -190,7 +197,7 @@ p{
 p  {font-size: 1em; line-height:$baseline;}
 h1 { font-size: 2.5em; line-height:$baseline*2;}
 h2 { font-size: 1.375em; line-height:$baseline*1.5;}
-h3 { 
+h3 {
   color:$light-gray-color;
   line-height:$baseline*2;
 }
@@ -249,7 +256,7 @@ hr{
 }
 
 // display
-    
+
 .relative{
   position:relative;
 }
@@ -494,11 +501,11 @@ ul {
 //images
 
 .thumb-md{
-  max-width:200px; 
+  max-width:200px;
 }
 
 .thumb-sm{
-  max-width:70px; 
+  max-width:70px;
 }
 
 
@@ -962,7 +969,7 @@ section .bg-cover-2 {
 }
 
 blockquote {
-  font-size: 1.375em; 
+  font-size: 1.375em;
   line-height:$baseline*1.5;
 }
 
@@ -992,9 +999,9 @@ a:hover {
 }
 
 a.anchor {
-  display: block; 
-  position: relative; 
-  top: -125px; 
+  display: block;
+  position: relative;
+  top: -125px;
   visibility: hidden;
 }
 
@@ -1007,15 +1014,15 @@ a.anchor {
 
 form p .label {
   font-family:$large-font-name;
-  font-weight: inherit; 
-  font-size: 1.4em; 
+  font-weight: inherit;
+  font-size: 1.4em;
   line-height:$baseline;
 }
 
 .wpcf7-form-control {
   font-family:$large-font-name;
-  font-weight: inherit; 
-  font-size: 1.4em; 
+  font-weight: inherit;
+  font-size: 1.4em;
   line-height:$baseline;
 }
 
@@ -1033,7 +1040,7 @@ form p .label {
     border: 1px solid transparent;
     border-radius: 4px;
 }
-  
+
 .panel-secondary{
     min-height: 300px;
     border-radius: 0 !important;
@@ -1097,7 +1104,7 @@ form p .label {
         margin: 15px 0;
     }
     /* since 3.1.0 */
-    .navbar-collapse.collapse.in { 
+    .navbar-collapse.collapse.in {
         display: block!important;
     }
     .collapsing {

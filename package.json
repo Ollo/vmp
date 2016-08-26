@@ -1,0 +1,25 @@
+{
+  "name": "vinyl-me-please",
+  "version": "1.6.0",
+  "description": "The Best Damn Record Club Out There",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ollo/vmp.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Ollo/vmp/issues"
+  },
+  "homepage": "https://github.com/Ollo/vmp#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.9"
+  }
+}
