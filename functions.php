@@ -26,6 +26,7 @@ add_action('pre_get_posts', 'custom_type_archive_display');
 // queue up custom styles
 function register_vmp_scripts_n_stylez() {
   wp_enqueue_style('vmp-styles', get_template_directory_uri() . '/stylesheets/styles.css' );
+  wp_enqueue_style( 'vmp-dashicons', get_stylesheet_uri(), array( 'dashicons' ), '1.0' );
 }
 
 add_action('wp_enqueue_scripts', 'register_vmp_scripts_n_stylez');

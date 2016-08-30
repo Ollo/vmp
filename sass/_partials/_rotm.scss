@@ -1,13 +1,46 @@
+// responsive
+
+$tablet-width: 600px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+// main styles
+
 #rotm {
   margin-top: 110px;
+
+  .btn {
+    padding: 1rem 6rem!important;
+  }
+
   .button-nav {
     display: flex;
     justify-content: center;
-    align-content: space-between;
-    margin: 40px 0;
+    align-content: space-around;
+    margin: 40px 20px;
 
-    a {
-      margin: 0 40px;
+    .btn {
+      margin: 0 10px;
+    }
+
+    @include tablet {
+      margin: 40px 0;
+      align-content: space-between;
+
+      .btn {
+        margin: 0 40px;
+      }
     }
   }
 
@@ -21,31 +54,43 @@
     padding: 1em 40px!important;
     font-weight: 600;
   }
-  .hero-heading {
-    color: white;
-  }
+
   .page-intro {
     background-size: cover;
     background-position: center center;
-  }
-  .page-hero {
-    color: white;
-    max-width: 50vw;
-    margin: 0 auto;
-    text-align: center;
-    &__heading {
+
+    &__album-title, &__label, &__band, &__date {
+      color: white;
+      font-family: 'pt_sans_regular';
+    }
+
+    &__hero {
+      max-width: 50vw;
+      margin: 0 auto;
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    &__album-title {
       text-transform: uppercase;
-      font-family: 'droid_sans_bold';
-      font-weight: 500;
       font-size: 8rem;
       line-height: 1;
       &:before, &:after {
         content: '"';
       }
     }
-    &__heading, &__sub-heading, p {
-      color: white;
+
+    &__label {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 17px;
     }
+
+    &__band {
+      font-size: 5rem;
+    }
+
     & hr {
       width: 7vw;
       border: 1px solid white;
@@ -54,48 +99,62 @@
 
   .video-iframe {
     position: relative;
+
     &__container {
-      width: 60vw;
       margin: 0 auto;
-      position: relative;
-      padding-bottom: 35.25%;
-      padding-top: 35px;
+      padding-bottom: 45%;
       height: 0;
-      overflow: hidden;
+      margin-top: 120px;
 
       iframe {
-        top: 0;
-        left: 0;
         width: 100%;
-        min-height: 60vh;
-        height: 100%;
+        margin-top: -60px;
       }
     }
     &__title {
       text-align: center;
+      padding: 0 0 20px;
     }
-    &-background {
-      top: 20%;
-      // height: 100%;
-      // width: 100%;
-      // padding: 50%;
+    @include desktop {
+      &__container {
+        max-width: 50vw;
+        padding-bottom: 25%;
+      }
     }
   }
 
   .details {
-    padding: 40px 0;
-    &__image {
+    padding: 40px 0!important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
+    &__image {
+      width: 400px;
+      height: auto;
+      align-self: center;
     }
     &__list {
-
+      width: 300px;
+      align-self: center;
     }
-    &__title {
+    &__list-title {
       padding-top: 40px;
     }
     &__list-items {
       font-weight: bold;
+      text-transform: uppercase;
     }
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  .promo {
+    text-align: center;
+    margin: 60px 0;
+    font-family: pt_sans_bold;
+    font-size: 18px;
   }
 
   .callout {
@@ -103,11 +162,165 @@
     text-align: center;
     p {
       color: #000!important;
-      max-width: 40%;
       margin: 20px auto;
       span {
         text-decoration: underline;
       }
     }
+    &__title {
+      font-family: droid_sans;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+    @include desktop {
+      p {
+        max-width: 40%;
+      }
+    }
   }
+
+  .preview {
+    &__hero {
+      background-position: 50% 33%;
+      background-repeat: no-repeat;
+      height: 35vh;
+      background-size: cover;
+      text-align: center;
+    }
+    &__hero-title {
+      color: white;
+      padding: 13% 0;
+      font-size: 6rem;
+      text-transform: uppercase;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+    &__content-audio {
+      align-self: center;
+      padding: 40px 0 0;
+      p { margin-bottom: 0!important; }
+    }
+    &__content-excerpt {
+      padding: 0 40px;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-size: 14px;
+        line-height: 2.4;
+        font-weight: bold;
+      }
+      .btn {
+        align-self: center;
+      }
+
+    }
+    @include desktop {
+      &__content {
+        flex-direction: row;
+        padding: 100px 160px 0;
+      }
+      &__content-audio {
+        padding: 0;
+      }
+      &__hero-title {
+        padding: 8% 0;
+      }
+      &__content-excerpt {
+        .btn {
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+
+  .read-more {
+    text-align: center;
+    hr {
+      width: 6vw;
+      border-width: 5px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    &__title {
+      text-transform: uppercase;
+      font-weight: lighter;
+      letter-spacing: 3px;
+      font-size: 17px;
+    }
+    &__posts {
+      list-style: none;
+      display: inline-flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+    }
+
+    @include tablet {
+      &__posts {
+        flex-direction: row;
+      }
+    }
+  }
+
+  .post {
+    position: relative;
+    margin-right: 3rem;
+    padding: 20px;
+    &__image {
+      width: 300px;
+      height: 300px;
+      border-radius: 15px;
+
+    }
+    &__caption-title {
+      margin-top: 30px;
+      a {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 12px;
+        font-family: pt_sans_regular;
+        color: black;
+      }
+    }
+    &__icon {
+      transform: rotate(-45deg);
+      color: black;
+      font-size: 40px;
+      background: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      padding: 11px;
+      position: absolute;
+      top: 30%;
+      left: 44%;
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    @include tablet {
+      width: 300px;
+      padding: 0;
+    }
+  }
+
+  .support_links {
+    text-align: center;
+    font-size: 2rem;
+    margin: 100px auto;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
 }
