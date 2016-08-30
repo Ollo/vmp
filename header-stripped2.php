@@ -13,10 +13,6 @@
 <!--Optimizely-->
 <script src="//cdn.optimizely.com/js/484190032.js"></script>
 <!--End Optimizely-->
-<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/font-awesome.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/bootstrap.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/mailchimp_embedd.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/style.css.css" type="text/css" media="screen" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.js" type="text/javascript"></script>
