@@ -25,13 +25,13 @@ get_header(); ?>
         $paged = get_query_var('paged');
         $paged = ($paged) ? $paged : 1;
         $args = array(
-          'post_type' => array('record-of-the-month', 'new-rotm'),
+          'post_type' => array('record-of-the-month', 'new-records'),
           'posts_per_page' => 12,
           'paged' => $paged
         );
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post(); ?>
-        <?php if ('new-rotm' === get_post_type()) { ?>
+        <?php if ('new-records' === get_post_type()) { ?>
           <div class='col-md-4'>
             <div class='panel padding-right padding-left padding-top double-margin-bottom'>
               <a href="<?php the_permalink(); ?>">

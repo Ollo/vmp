@@ -46,12 +46,15 @@ function create_my_post_types() {
     )
   );
 
-  register_post_type('new-rotm',
+  register_post_type('new-records',
     array(
       'labels' => array(
         'name' => __('Record of the Month v2'),
         'singular_name' => __('records'),
       ),
+      'hierarchical' => true,
+      'publicly_queryable' => true,
+      'rewrite' => true,
       'supports' => array('title', 'thumbnail', 'page-attributes'),
       'public' => true,
     )

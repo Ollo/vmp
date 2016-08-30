@@ -11,7 +11,7 @@ require_once(get_template_directory() . '/includes/record-of-the-month-functions
 query_posts(
   array(
     'posts_per_page' => 1,
-    'post_type' => array('new-rotm', 'record-of-the-month'),
+    'post_type' => array('new-records', 'record-of-the-month'),
   )
 );
 
