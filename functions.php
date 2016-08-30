@@ -50,7 +50,7 @@ function create_my_post_types() {
     array(
       'labels' => array(
         'name' => __('Record of the Month v2'),
-        'singular_name' => __('recordstwo'),
+        'singular_name' => __('records'),
       ),
       'supports' => array('title', 'thumbnail', 'page-attributes'),
       'public' => true,
