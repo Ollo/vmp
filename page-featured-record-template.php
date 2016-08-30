@@ -107,7 +107,7 @@ renderJS();
   <section class="callout background-primary">
     <p>Each month, Vinyl Me, Please teams up with artists to create <span>exclusive</span> vinyl packages for our subscribers.</p>
     <p>Sign up by <?php echo $published; ?> 15th to get this record.</p>
-    <a class="btn btn-rotm callout__button" href="signup">join the club</a>
+    <a class="btn btn-rotm callout__button" href="<?php bloginfo('url'); ?>/select-your-plan/">join the club</a>
   </section>
   <section id="preview" class="preview">
     <div class="preview__hero" style="background-image: url('<?php echo $preview_bg; ?>');">
@@ -119,7 +119,7 @@ renderJS();
       </div>
       <article class="preview__content-excerpt">
         <?php echo  $liner_notes_excerpt; ?>
-        <a class="btn btn-rotm-inverse" href="<?php echo $liner_notes_link; ?>">read the liner notes</a>
+        <a class="btn btn-rotm-inverse" href="<?php echo $liner_notes_link; ?>" target="_blank">read the liner notes</a>
       </article>
     </div>
   </section>
@@ -133,12 +133,12 @@ renderJS();
           <li class="post">
             <figure class="post__wrapper">
               <img src="<?php echo $featured_post_image_1; ?>" class="post__image" />
-              <a href="<?php echo $featured_post_url_1; ?>">
+              <a href="<?php echo $featured_post_url_1; ?>" target="_blank">
                 <span class="post__icon dashicons dashicons-arrow-right-alt"></span>
               </a>
               <figcaption class="post__caption">
                 <p class="post__caption-title">
-                  <a href="<?php echo $featured_post_url_1; ?>"><?php echo $featured_post_title_1; ?></a>
+                  <a href="<?php echo $featured_post_url_1; ?>" target="_blank"><?php echo $featured_post_title_1; ?></a>
                 </p>
               </figcaption>
             </figure>
@@ -148,12 +148,12 @@ renderJS();
           <li class="post">
             <figure class="post__wrapper">
               <img src="<?php echo $featured_post_image_2; ?>" class="post__image" />
-              <a href="<?php echo $featured_post_url_2; ?>">
+              <a href="<?php echo $featured_post_url_2; ?>" target="_blank">
                 <span class="post__icon dashicons dashicons-arrow-right-alt"></span>
               </a>
               <figcaption class="post__caption">
                 <p class="post__caption-title">
-                  <a href="<?php echo $featured_post_url_2; ?>"><?php echo $featured_post_title_2; ?></a>
+                  <a href="<?php echo $featured_post_url_2; ?>" target="_blank"><?php echo $featured_post_title_2; ?></a>
                 </p>
               </figcaption>
             </figure>
@@ -163,12 +163,12 @@ renderJS();
           <li class="post">
             <figure class="post__wrapper">
               <img src="<?php echo $featured_post_image_3; ?>" class="post__image" />
-              <a href="<?php echo $featured_post_url_3; ?>">
+              <a href="<?php echo $featured_post_url_3; ?>" target="_blank">
                 <span class="post__icon dashicons dashicons-arrow-right-alt"></span>
               </a>
               <figcaption class="post__caption">
                 <p class="post__caption-title">
-                  <a href="<?php echo $featured_post_url_3; ?>"><?php echo $featured_post_title_3; ?></a>
+                  <a href="<?php echo $featured_post_url_3; ?>" target="_blank"><?php echo $featured_post_title_3; ?></a>
                 </p>
               </figcaption>
             </figure>
@@ -183,9 +183,9 @@ renderJS();
     </div>
     <div class="callout background-primary">
       <h5 class="callout__title">I'd like to join vinyl me please, please</h5>
-      <a class="btn btn-rotm callout__button">join the club</a>
+      <a class="btn btn-rotm callout__button" href="<?php bloginfo('url'); ?>/select-your-plan/">join the club</a>
     </div>
-    <p class="support_links">questions? <a href="mailto:">reach out to support</a>, or find out <a href="">how this all works</a>
+    <p class="support_links">questions? <a href="http://help.vinylmeplease.com" target="_blank">reach out to support</a>, or find out <a href="<?php bloginfo('url'); ?>/how-it-works/" target="_blank">how this all works</a> works</a>
   </footer>
 </main>
 
