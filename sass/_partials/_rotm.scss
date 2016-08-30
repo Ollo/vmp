@@ -65,7 +65,6 @@ $desktop-width: 1024px;
     }
 
     &__hero {
-      max-width: 50vw;
       margin: 0 auto;
       text-align: center;
       padding: 60px 0;
@@ -73,7 +72,7 @@ $desktop-width: 1024px;
 
     &__album-title {
       text-transform: uppercase;
-      font-size: 8rem;
+      font-size: 4rem;
       line-height: 1;
       &:before, &:after {
         content: '"';
@@ -88,12 +87,31 @@ $desktop-width: 1024px;
     }
 
     &__band {
-      font-size: 5rem;
+      font-size: 3rem;
     }
 
     & hr {
       width: 7vw;
       border: 1px solid white;
+    }
+
+    &__date {
+      font-size: 23px;
+    }
+
+    @include tablet {
+      &__hero {
+        max-width: 50vw;
+      }
+      &__album-title {
+        font-size: 8rem;
+      }
+      &__band {
+        font-size: 5rem;
+      }
+      &__date {
+        font-size: 26px;
+      }
     }
   }
 
@@ -117,7 +135,7 @@ $desktop-width: 1024px;
     }
     @include desktop {
       &__container {
-        max-width: 50vw;
+        max-width: 45vw;
         padding-bottom: 25%;
       }
     }
@@ -152,9 +170,12 @@ $desktop-width: 1024px;
 
   .promo {
     text-align: center;
-    margin: 60px 0;
     font-family: pt_sans_bold;
     font-size: 18px;
+
+    @include tablet {
+      margin: 60px 0;
+    }
   }
 
   .callout {
