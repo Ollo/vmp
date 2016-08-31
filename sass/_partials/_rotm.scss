@@ -25,7 +25,7 @@ $desktop-width: 1024px;
   }
 
   .button-nav {
-    display: flex;
+    display: none;
     justify-content: center;
     align-content: space-around;
     margin: 40px 20px;
@@ -41,6 +41,9 @@ $desktop-width: 1024px;
       .btn {
         margin: 0 40px;
       }
+    }
+    @include desktop {
+      display: flex;
     }
   }
 
@@ -149,8 +152,12 @@ $desktop-width: 1024px;
 
     &__image {
       width: 400px;
-      height: auto;
       align-self: center;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
     &__list {
       width: 300px;
@@ -165,6 +172,13 @@ $desktop-width: 1024px;
     }
     @include tablet {
       flex-direction: row;
+
+      &__image {
+        width: 600px;
+      }
+    }
+    @include desktop {
+
     }
   }
 
@@ -232,11 +246,6 @@ $desktop-width: 1024px;
       display: flex;
       flex-direction: column;
 
-      p {
-        font-size: 14px;
-        line-height: 2.4;
-        font-weight: bold;
-      }
       .btn {
         align-self: center;
       }
