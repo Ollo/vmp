@@ -97,7 +97,7 @@ renderJS();
   </section>
   <section class="details">
     <figure class="details__image">
-      <?php the_post_thumbnail(array(400, 400)); ?>
+      <?php the_post_thumbnail(array(600, 600)); ?>
     </figure>
     <div class="details__list ">
       <p class="details__list-title secondary-color">this month's exclusive includes:</p>
@@ -189,4 +189,4 @@ renderJS();
   </footer>
 </main>
 
-<?php get_footer(); ?>
+<?php get_footer('stripped'); ?>
