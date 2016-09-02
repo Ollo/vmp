@@ -76,7 +76,7 @@ section {
     <a class="btn btn-rotm-inverse" href="#read-more">read more</a>
   </nav>
   <section id="the-vinyl" class="video-iframe" style="background-color: <?php echo $primary ?>;">
-    <div class="video-iframe__container container">
+    <div id="featuredVideo" class="video-iframe__container container">
       <?php echo $youtube; ?>
     </div>
     <div class="video-iframe-background"></div>

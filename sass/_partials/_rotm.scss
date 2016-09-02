@@ -238,12 +238,13 @@ $desktop-width: 1024px;
       flex-direction: column;
       -webkit-justify-content: center;
       justify-content: center;
-
     }
     &__content-audio {
       -webkit-align-self: center;
       align-self: center;
       padding: 40px 0 0;
+      -webkit-flex-basis: auto;
+      flex-shrink: 0;
       p { margin-bottom: 0!important; }
     }
     &__content-excerpt {
@@ -251,6 +252,8 @@ $desktop-width: 1024px;
       display: flex;
       -webkit-flex-direction: column;
       flex-direction: column;
+
+      -webkit-flex-basis: auto;
 
       .btn {
         -webkit-align-self: center;

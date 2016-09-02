@@ -31,7 +31,7 @@ function renderJS() { ?>
     })
 
     // Find all iframes
-    var $iframes = $( "iframe" );
+    var $iframes = $("#featuredVideo");
 
     // Find and save the aspect ratio for all iframes
     $iframes.each(function () {
